@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>JosephProject</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">EMLAKSATIŞ<strong>.COM</strong>
+            </div>
+            <ul class="links">
+                <li key="1"><a href="index.html">Anasayfa</a></li>
+                <li key="2"><a href="forsale.html">İlanlar</a></li>
+                <li key="3"><a href="question.html">S.S.S</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" type="button" data-toggle="dropdown">Language
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" id="en" class="dropdown-item">English</a>
+                      <a href="#" id="ar" class="dropdown-item">عربي</a>
+                      <a href="#" id="ru" class="dropdown-item">Русский</a>
+                      <a href="#" id="ch" class="dropdown-item">中国人</a>
+                      <a href="#" id="jp" class="dropdown-item">日本</a>
+                    </div>
+                </div>
+            </ul>      
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <content>
+       <div class="container">
+        <h1 class="heading" key="4">S.S.S</h1>
+        <div class="sale">
+            <h2>Sıkça Sorulan Sorular</h2>
+        <hr />
+        <div class="question">
+            <h3>
+               1) Nasıl İlan Eklerim? 
+            </h3>
+            <p> 
+                İlan eklemek için sisteme kayıt oluşturmanız gerekmektedir. 
+            </p>
+            <h3>
+               2) Kaç Ücretsiz İlan Hakkım Var? 
+            </h3>
+            <p>
+                Tüm kullanıcılar portal üzerinden, dilediği kategoride ilan ekleyebilir. 
+            </p>
+            <h3>
+               3) İlan Süresi Kaç Gün? 
+            </h3>
+            <p>
+                Kullanıcılar için Kategori farketmeksizin oluşturulan tüm ilanlar, sistem üzerinden 280 gün boyunca barındırılır. 
+            </p>
+        </div>
+        </div>
+       </div>
+    </content>
+    <div id="box">
+        <button onclick="toggleCloseBox();">
+            <div class="closebox" id="closebox">
+                <i class="fa-solid fa-xmark fa-2x" style="color: white; padding: 5%;"></i>
+            </div>
+        </button>
+        <div class="popBox">
+            <h3>Yardım</h3>
+            <label>
+                <input type="text" class="helpseach" id="search"placeholder="Yardımcı Olalım">
+              </label>
+        </div>
+    </div>
+    <button onclick="toggleBox();">
+        <div class="popup" id="pop">
+            <i class="fa-brands fa-whatsapp fa-4x" aria-hidden="true"></i>
+        </div>
+    </button>
+    <div class="footer">
+        <p>@2023 Copyright</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>JosephProject</title>
+    <script>
+        let slideIndex = 1;
+showSlide(slideIndex);
+
+function nextSlide() {
+  showSlide(slideIndex += 1);
+}
+
+function prevSlide() {
+  showSlide(slideIndex -= 1);  
+}
+
+function showSlide(n) {
+  const slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slides[slideIndex - 1].classList.add("active");
+}
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">EMLAKSATIŞ<strong>.COM</strong>
+            </div>
+            <ul class="links">
+                <li key="1"><a href="index.html">Anasayfa</a></li>
+                <li key="2"><a href="forsale.html">İlanlar</a></li>
+                <li key="3"><a href="question.html">S.S.S</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" type="button" data-toggle="dropdown">Language
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" id="en" class="dropdown-item">English</a>
+                      <a href="#" id="ar" class="dropdown-item">عربي</a>
+                      <a href="#" id="ru" class="dropdown-item">Русский</a>
+                      <a href="#" id="ch" class="dropdown-item">中国人</a>
+                      <a href="#" id="jp" class="dropdown-item">日本</a>
+                    </div>
+                </div>
+            </ul>      
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <content>
+       <div class="container">
+        <h1 class="heading" key="4">Ev İlanları</h1>
+        <div class="sale">
+            <h2>Satılıktır Metroya 5 dakika Kadıköy'de İlan</h2>
+        <hr />
+            <div class="slider">
+                <img src="../images/image1.jpg" class="slide active">
+                <img src="../images/image2.jpg" class="slide">
+                <img src="../images/image3.jpg" class="slide">
+                <img src="../images/image4.jpg" class="slide">
+                <img src="../images/image5.jpg" class="slide">
+                <img src="../images/image6.jpg" class="slide">
+                <div class="controls">
+                  <button class="prev" onclick="prevSlide()">&#10094;</button>
+                  <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+            <div class="information">
+                <h4 class="price">1.200.000 TL</h4>
+                <table style="width:90%">
+                    <tr>
+                      <th>İlan No :</th>
+                      <td>19111911</td>
+                    </tr>
+                    <tr>
+                      <th>İlan Tarihi :</th>
+                      <td>27 Şubat 2023</td>
+                    </tr>
+                    <tr>
+                      <th>Emlak Tipi :</th>
+                      <td>Satılık Daire</td>
+                    </tr>
+                    <tr>
+                        <th>m² (Net) :</th>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th>Yapı Yaşı:</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Oda Sayısı :</th>
+                        <td>6+2</td>
+                    </tr>
+                    <tr>
+                        <th>Bulunduğu Kat :</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Kat Sayısı :</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Isıtma :</th>
+                        <td>Kombi (Doğalgaz)</td>
+                    </tr>
+                    <tr>
+                        <th>Banyo Sayısı :</th>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th>Balkon :</th>
+                        <td>Yok</td>
+                    </tr>
+                    <tr>
+                        <th>Eşyalı :</th>
+                        <td>Hayır</td>
+                    </tr>
+                    <tr>
+                        <th>Kullanım Durumu :</th>
+                        <td>Mülk Sahibi</td>
+                    </tr>
+                    <tr>
+                        <th>Krediye Uygun :</th>
+                        <td>Belirtilmemiş</td>
+                    </tr>
+                    <tr>
+                        <th>Tapu Durumu :</th>
+                        <td>Kat İrtifaklı</td>
+                    </tr>
+                    <tr>
+                        <th>Kimden :</th>
+                        <td>Mülk Sahibinden</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="infodetails">
+                <h3>Ek Açıklamalar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid recusandae doloremque iure non! Facere quasi repudiandae error sed, quas ipsum quis qui accusamus, dolore voluptatum distinctio magni nemo quae. Suscipit alias ipsam dolor culpa itaque optio maxime reiciendis ad natus ullam illo assumenda impedit quisquam dicta animi repellendus unde placeat nemo consectetur nulla, neque corrupti! Magnam obcaecati consequuntur earum animi, inventore nisi optio sint necessitatibus quae facere ullam illo laboriosam maxime fugiat cupiditate nihil quo temporibus itaque non, magni sequi esse deleniti quidem tenetur. Enim dolore amet impedit a fugit, libero qui explicabo non fugiat quaerat eum facilis dolores error iste? Neque minus dolores voluptas quia! Praesentium cum repellendus consequatur, adipisci molestias quo assumenda ullam eius, quae hic deleniti magnam! Necessitatibus quae enim recusandae porro, est at delectus praesentium esse explicabo error minima odio nihil quia? Possimus neque sequi, ea minima maxime, quod ut illo, quibusdam eum culpa ab saepe!</p>
+            </div>
+        </div>
+       </div>
+    </content>
+    <div id="box">
+        <button onclick="toggleCloseBox();">
+            <div class="closebox" id="closebox">
+                <i class="fa-solid fa-xmark fa-2x" style="color: white; padding: 5%;"></i>
+            </div>
+        </button>
+        <div class="popBox">
+            <h3>Yardım</h3>
+            <label>
+                <input type="text" class="helpseach" id="search"placeholder="Yardımcı Olalım">
+              </label>
+        </div>
+    </div>
+    <button onclick="toggleBox();">
+        <div class="popup" id="pop">
+            <i class="fa-brands fa-whatsapp fa-4x" aria-hidden="true"></i>
+        </div>
+    </button>
+    <div class="footer">
+        <p>@2023 Copyright</p>
+    </div>
+</body>
+</html>

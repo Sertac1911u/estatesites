@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JosephProject</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">EMLAKSATIŞ<strong>.COM</strong>
+            </div>
+            <ul class="links">
+                <li key="1"><a href="index.html">Anasayfa</a></li>
+                <li key="2"><a href="forsale.html">İlanlar</a></li>
+                <li key="3"><a href="question.html">S.S.S</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" type="button" data-toggle="dropdown">Language
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" id="en" class="dropdown-item">English</a>
+                      <a href="#" id="ar" class="dropdown-item">عربي</a>
+                      <a href="#" id="ru" class="dropdown-item">Русский</a>
+                      <a href="#" id="ch" class="dropdown-item">中国人</a>
+                      <a href="#" id="jp" class="dropdown-item">日本</a>
+                    </div>
+                </div>
+            </ul>      
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <content>
+        <div class="sidebar">
+            <label>
+                <div class="ltext">
+                    Ara :
+                    &nbsp;&nbsp;
+                </div>
+                <input type="text" id="search" class="searcharea" placeholder="Search...">
+            </label>
+              <label>
+                <div class="ltext">
+                    Kategoriye göre filtrele :
+                </div>
+                <select id="category" class="dropdown-btn">
+                    <div>
+                        <option value="all" class="values">All</option>
+                        <option value="istanbul" class="values">İstanbul</option>
+                        <option value="izmir" class="values">İzmir</option>
+                        <option value="ankara" class="values">Ankara</option>
+                    </div>
+                </select>
+              </label>              
+        </div>
+       <div class="container forsale">
+        <h1 class="heading" key="4">İlanlar</h1>
+        <div class="box-container" id="items">
+            <div class="box item" data-category="istanbul">
+                <img src="../images/image1.jpg"alt="">
+                <h3 key="5">İstanbul'da Satılık Ev</h3>
+                <p key="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="7">İlana Git</a>
+            </div>
+            <div class="box item" data-category="izmir">
+                <img src="../images/image2.jpg"alt="">
+                <h3 key="8">İzmir'de Satılık Ev</h3>
+                <p key="9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="10">İlana Git</a>
+            </div>
+            <div class="box item" data-category="ankara">
+                <img src="../images/image3.jpg"alt="">
+                <h3 key="11">Ankara'da Satılık Ev</h3>
+                <p key="12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="13">İlana Git</a>
+            </div>
+            <div class="box item" data-category="istanbul">
+                <img src="../images/image1.jpg"alt="">
+                <h3 key="5">İstanbul'da Satılık Ev</h3>
+                <p key="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="7">İlana Git</a>
+            </div>
+            <div class="box item" data-category="izmir">
+                <img src="../images/image2.jpg"alt="">
+                <h3 key="8">İzmir'de Satılık Ev</h3>
+                <p key="9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="10">İlana Git</a>
+            </div>
+            <div class="box item" data-category="izmir">
+                <img src="../images/image2.jpg"alt="">
+                <h3 key="8">İzmir'de Satılık Ev</h3>
+                <p key="9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="10">İlana Git</a>
+            </div>
+                <div class="box item" data-category="izmir">
+                <img src="../images/image2.jpg"alt="">
+                <h3 key="8">İzmir'de Satılık Ev</h3>
+                <p key="9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="10">İlana Git</a>
+            </div>
+       </div>
+    </content>
+    <div id="box">
+        <button onclick="toggleCloseBox();">
+            <div class="closebox" id="closebox">
+                <i class="fa-solid fa-xmark fa-2x" style="color: white; padding: 5%;"></i>
+            </div>
+        </button>
+        <div class="popBox">
+            <h3>Yardım</h3>
+            <label>
+                <input type="text" class="helpseach" id="search"placeholder="Yardımcı Olalım">
+              </label>
+        </div>
+    </div>
+    <button onclick="toggleBox()">
+        <div class="popup" id="pop">
+            <i class="fa-brands fa-whatsapp fa-4x" aria-hidden="true"></i>
+        </div>
+    </button>
+    <div class="footer">
+        <p>&copy; 2023 Example Company. All Rights Reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!--
+    1.pop up bug düzenle //okey
+    2.popup duzenle //okey
+    3.side bar düzenle // ?
+    4.icerik düzenle // ?
+    5.sss düzenle 
+    6.dil kısmını duzenle
+-->

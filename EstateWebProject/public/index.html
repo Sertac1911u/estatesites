@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <title>JosephProject</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle">
+            <div class="logo">EMLAKSATIŞ<strong>.COM</strong>
+            </div>
+            <ul class="links">
+                <li key="1"><a href="index.html">Anasayfa</a></li>
+                <li key="2"><a href="forsale.html">İlanlar</a></li>
+                <li key="3"><a href="question.html">S.S.S</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn" type="button" data-toggle="dropdown">Language
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#" id="en" class="dropdown-item">English</a>
+                      <a href="#" id="ar" class="dropdown-item">عربي</a>
+                      <a href="#" id="ru" class="dropdown-item">Русский</a>
+                      <a href="#" id="ch" class="dropdown-item">中国人</a>
+                      <a href="#" id="jp" class="dropdown-item">日本</a>
+                    </div>
+                </div>
+            </ul>      
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+    <content>
+       <div class="container">
+        <h1 class="heading" key="4">Son İlanlar</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="../images/image1.jpg" alt="">
+                <h3 key="5">Satılık Ev</h3>
+                <p key="6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="7">İlana Git</a>
+            </div>
+            <div class="box">
+                <img src="../images/image2.jpg" alt="">
+                <h3 key="8">Satılık Ev</h3>
+                <p key="9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="10">İlana Git</a>
+            </div>
+            <div class="box">
+                <img src="../images/image3.jpg" alt="">
+                <h3 key="11">Satılık Ev</h3>
+                <p key="12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale.html" class="btn" key="13">İlana Git</a>
+            </div>
+             <div class="box">
+                <img src="../images/image4.jpg" alt="">
+                <h3 key="14">Satılık Ev</h3>
+                <p key="15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aspernatur, voluptatibus iusto exercitationem nulla ratione neque vitae numquam adipisci suscipit.</p>
+                <a href="sale" class="btn" key="16">İlana Git</a>
+            </div>
+        </div>
+       </div>
+    </content>
+    <div id="box">
+        <button onclick="toggleCloseBox();">
+            <div class="closebox" id="closebox">
+                <i class="fa-solid fa-xmark fa-2x" style="color: white; padding: 5%;"></i>
+            </div>
+        </button>
+        <div class="popBox">
+            <h3>Yardım</h3>
+
+            <!-- <div class="elfsight-app-09f6ea19-496c-46c6-9fb0-bcd8b86653dc"></div> -->
+            <label>
+                <input type="text" class="helpseach" id="search"placeholder="Yardımcı Olalım">
+              </label>
+        </div>
+    </div>
+    <button onclick="toggleBox();">
+        <div class="popup" id="pop">
+            <i class="fa-brands fa-whatsapp fa-4x" aria-hidden="true"></i>
+        </div>
+    </button>
+    <div class="footer">
+        <p>@2023 Copyright</p>
+    </div>
+</body>
+</html>
